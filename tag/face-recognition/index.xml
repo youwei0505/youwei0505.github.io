@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Face Recognition | Chih-Ting Liu&#39;s Homepage</title>
+    <link>https://jackie840129.github.io/tag/face-recognition/</link>
+      <atom:link href="https://jackie840129.github.io/tag/face-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <description>Face Recognition</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Chih-Ting Liu</copyright><lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jackie840129.github.io/images/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_2.png</url>
+      <title>Face Recognition</title>
+      <link>https://jackie840129.github.io/tag/face-recognition/</link>
+    </image>
+    
+    <item>
+      <title>FedFR: Joint Optimization Federated Framework for Generic and Personalized Face Recognition</title>
+      <link>https://jackie840129.github.io/publication/aaai_2022/</link>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://jackie840129.github.io/publication/aaai_2022/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

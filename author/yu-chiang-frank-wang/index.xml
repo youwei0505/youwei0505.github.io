@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yu-chiang Frank Wang | Chih-Ting Liu&#39;s Homepage</title>
+    <link>https://jackie840129.github.io/author/yu-chiang-frank-wang/</link>
+      <atom:link href="https://jackie840129.github.io/author/yu-chiang-frank-wang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yu-chiang Frank Wang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Chih-Ting Liu</copyright><lastBuildDate>Thu, 15 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jackie840129.github.io/images/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_2.png</url>
+      <title>Yu-chiang Frank Wang</title>
+      <link>https://jackie840129.github.io/author/yu-chiang-frank-wang/</link>
+    </image>
+    
+    <item>
+      <title>Spatially and Temporally Efficient Non-local Attention Network for Video-based Person Re-Identification</title>
+      <link>https://jackie840129.github.io/publication/bmvc19_stenvan/</link>
+      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://jackie840129.github.io/publication/bmvc19_stenvan/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

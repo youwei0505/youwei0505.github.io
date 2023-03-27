@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Person Re-Identification | Chih-Ting Liu&#39;s Homepage</title>
+    <link>https://jackie840129.github.io/tag/person-re-identification/</link>
+      <atom:link href="https://jackie840129.github.io/tag/person-re-identification/index.xml" rel="self" type="application/rss+xml" />
+    <description>Person Re-Identification</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Chih-Ting Liu</copyright><lastBuildDate>Wed, 22 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jackie840129.github.io/images/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_2.png</url>
+      <title>Person Re-Identification</title>
+      <link>https://jackie840129.github.io/tag/person-re-identification/</link>
+    </image>
+    
+    <item>
+      <title>Hard Samples Rectification for Unsupervised Cross-domain Person Re-identification</title>
+      <link>https://jackie840129.github.io/publication/icip21_hsr/</link>
+      <pubDate>Wed, 22 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://jackie840129.github.io/publication/icip21_hsr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Space-Time Guided Association Learning For Unsupervised Person Re-Identification</title>
+      <link>https://jackie840129.github.io/publication/icip20_stgal/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://jackie840129.github.io/publication/icip20_stgal/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

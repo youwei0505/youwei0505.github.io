@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video-based Re-identification | Chih-Ting Liu&#39;s Homepage</title>
+    <link>https://jackie840129.github.io/tag/video-based-re-identification/</link>
+      <atom:link href="https://jackie840129.github.io/tag/video-based-re-identification/index.xml" rel="self" type="application/rss+xml" />
+    <description>Video-based Re-identification</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Chih-Ting Liu</copyright><lastBuildDate>Tue, 15 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jackie840129.github.io/images/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_2.png</url>
+      <title>Video-based Re-identification</title>
+      <link>https://jackie840129.github.io/tag/video-based-re-identification/</link>
+    </image>
+    
+    <item>
+      <title>Video-based Person Re-identification without Bells and Whistles</title>
+      <link>https://jackie840129.github.io/publication/cvprw21_cfaan/</link>
+      <pubDate>Tue, 15 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://jackie840129.github.io/publication/cvprw21_cfaan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatially and Temporally Efficient Non-local Attention Network for Video-based Person Re-Identification</title>
+      <link>https://jackie840129.github.io/publication/bmvc19_stenvan/</link>
+      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://jackie840129.github.io/publication/bmvc19_stenvan/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

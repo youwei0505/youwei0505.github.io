@@ -1,1 +1,2388 @@
-Hello World
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chih-Ting (Jackie) Liu">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Computer Vision Applied Scientist">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://jackie840129.github.io/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  <meta name="theme-color" content="rgb(0, 136, 204)">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Chih-Ting Liu&#39;s Homepage">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hufdd866d90d76849587aac6fbf27da1ac_464_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hufdd866d90d76849587aac6fbf27da1ac_464_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://jackie840129.github.io/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chih-Ting Liu&#39;s Homepage">
+  <meta property="og:url" content="https://jackie840129.github.io/">
+  <meta property="og:title" content="Chih-Ting Liu&#39;s Homepage">
+  <meta property="og:description" content="Computer Vision Applied Scientist"><meta property="og:image" content="https://jackie840129.github.io/images/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://jackie840129.github.io/images/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2017-12-01T00:00:00&#43;08:00">
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://jackie840129.github.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://jackie840129.github.io/"
+}
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Chih-Ting Liu&#39;s Homepage</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="dark ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = true;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Chih-Ting Liu&#39;s Homepage</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Chih-Ting Liu&#39;s Homepage</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#experience" data-target="#experience"><span>Experience</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications" data-target="#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  <section id="about" class="home-section wg-about   "  >
+    <div class="container">
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      
+      <img class="avatar avatar-circle" src="/author/chih-ting-jackie-liu/avatar_hud8b1971a48ae081eefcef12d6a0bce28_2010756_230x230_fill_q90_lanczos_center.jpg" alt="Chih-Ting (Jackie) Liu">
+      
+
+      <div class="portrait-title">
+        <h2>Chih-Ting (Jackie) Liu</h2>
+        <h3>Computer Vision Applied Scientist</h3>
+
+        
+        <h3>
+          <a href="https://www.amazon.jobs/en/teams/lab126?cmpid=EPLIDS200680B" target="_blank" rel="noopener">
+          <span>Amazon Lab126 in Taiwan</span>
+          </a>
+        </h3>
+        
+      </div>
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="/#contact" >
+            <i class="fas fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://scholar.google.com.tw/citations?user=Q5CbftwAAAAJ&amp;hl=zh-TW" target="_blank" rel="noopener">
+            <i class="ai ai-google-scholar big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://github.com/jackie840129" target="_blank" rel="noopener">
+            <i class="fab fa-github big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="/cv/CV_Jackie_Liu.pdf" >
+            <i class="ai ai-cv big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-14 col-md-8">
+
+    
+    <h1>Biography</h1>
+
+    <p>My name is Chih-Ting Liu (劉致廷 in Chinese). I am a <strong>Computer Vision Applied Scientist</strong> in Amazon Lab126 at Taipei, Taiwan.
+I work on enabling cutting-edge computer vision features on 
+<a href="https://www.aboutamazon.com/what-we-do/devices-services" target="_blank" rel="noopener">Amazon devices</a> and 
+<a href="https://ring.com/" target="_blank" rel="noopener">Ring devices</a>.
+In July 2022, I received my Ph.D. degree from National Taiwan University (NTU) at the 
+<a href="http://media.ee.ntu.edu.tw/" target="_blank" rel="noopener">Media IC and System Lab</a>, advised by 
+<a href="http://www.ee.ntu.edu.tw/profile1.php?id=101" target="_blank" rel="noopener">Prof. Shao-Yi Chien</a>.</p>
+<p>My research interest is mainly on <strong>recongnition system in computer vision</strong>, including human recognition (re-identification), face recognition and object tracking.
+Moreover, in order to deploy AI on edge devices, I also focus on techniques related to on-device training, such as federated learning, and on-device inference, such as network pruning.
+Here are my 
+<a href="https://scholar.google.com.tw/citations?user=Q5CbftwAAAAJ&amp;hl=zh-TW" target="_blank" rel="noopener">Google Scholar</a> and 
+<a href="cv/CV_Jackie_Liu.pdf">CV</a>.</p>
+
+
+    <div class="row">
+
+      
+      <div class="col-md-5.5">
+        <h3>Interests</h3>
+        <ul class="ul-interests">
+          
+          <li>Deep Learning for Computer Vision</li>
+          
+          <li>Image/Video Recognition and Tracking</li>
+          
+          <li>Person/Vehicle Re-Identification (Re-ID)</li>
+          
+          <li>Neural Network Pruning</li>
+          
+          <li>Federated Learning for Recognition</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-6.5">
+        <h3>Education</h3>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Ph.D. in Electronics Enginieering, 2022</p>
+              <p class="institution">National Taiwan University</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">M.S. in Electronics Engineering, 2019</p>
+              <p class="institution">National Taiwan University</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">B.S. in Electrical Engineering, 2017</p>
+              <p class="institution">National Taiwan University</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  <section id="recent_news" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 col-lg-4 section-heading">
+      <h1>Recent News</h1>
+      
+    </div>
+    <div class="col-12 col-lg-8">
+      
+
+
+
+
+
+
+
+
+<p><strong>[Ph.D. Dissertation]</strong> My Ph.D. dissertation &ldquo;Learning Efficient and Effective Person Re-identification in Multi-Camera Tracking System and Beyond&rdquo; can be downloaded <a href="http://media.ee.ntu.edu.tw/research/jackieliu/Final_dissertation.pdf">here</a></p>
+<p><strong>[Aug. 2022]</strong> I start my new career as an computer vision applied scientist in Amazon Lab126 at Taipei!</p>
+<p><strong>[Jul. 2022]</strong> I pass the oral defense and got my Ph.D. degree from National Taiwan University (NTU)!</p>
+
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  <section id="experience" class="home-section wg-experience   "  >
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Industry Experience</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border exp-fill">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Applied Scientist</h4>
+            <div class="d-flex">
+                <img src="/media/126.png" width="70px" height="20px" alt="Amazon">
+              </a><div class="ml-2">
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.aboutamazon.com/" target="_blank" rel="noopener">Amazon</a></h4>
+                <div class="text-muted exp-meta">
+                  Aug 2022 –
+                  
+                    Present
+                  
+                  
+                    <span class="middot-divider"></span>
+                    <span>Amazon Lab126, Taipei, Taiwan</span>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="card-text px-0">Develop CV triggered featured for Amazon devices containing Alexa and Ring camera devices.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Intern</h4>
+            <div class="d-flex">
+                <img src="/media/M_500.jpg" width="70px" height="20px" alt="Microsoft">
+              </a><div class="ml-2">
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.facebook.com/msairdcentertw/" target="_blank" rel="noopener">Microsoft</a></h4>
+                <div class="text-muted exp-meta">
+                  Mar 2021 –
+                  
+                    Sep 2021
+                  
+                  
+                    <span class="middot-divider"></span>
+                    <span>AI R&amp;D Center, Taipei, Taiwan</span>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="card-text px-0">Develop an end-to-end federated learning face recognition framework that can jointly improve generic face representation and personalized user experience.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Intern</h4>
+            <div class="d-flex">
+                <img src="/media/mtk.jpg" width="70px" height="20px" alt="MediaTek">
+              </a><div class="ml-2">
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.mediatek.tw/" target="_blank" rel="noopener">MediaTek</a></h4>
+                <div class="text-muted exp-meta">
+                  Mar 2020 –
+                  
+                    Jul 2020
+                  
+                  
+                    <span class="middot-divider"></span>
+                    <span>Intelligent Vision Processing (IVP), Hsinchu, Taiwan</span>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="card-text px-0">Develop one-stage real-time multi-object tracking system that integrate detection and tracking into one network.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Intern</h4>
+            <div class="d-flex">
+                <img src="/media/mtk.jpg" width="70px" height="20px" alt="MediaTek">
+              </a><div class="ml-2">
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.mediatek.tw/" target="_blank" rel="noopener">MediaTek</a></h4>
+                <div class="text-muted exp-meta">
+                  Jun 2017 –
+                  
+                    Sep 2017
+                  
+                  
+                    <span class="middot-divider"></span>
+                    <span>Video Coding Processing (VCP), Hsinchu, Taiwan</span>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="card-text px-0">Focus on developing a deep-learning based coding unit (CU) decision policy for the next generation Codec.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  <section id="publications" class="home-section wg-pages   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+<div class="row ">
+  
+    
+      <div class="col-12 col-lg-4 section-heading">
+        <h1>Publications</h1>
+        
+      </div>
+    
+  
+  <div class="col-12 col-lg-8">
+
+    <!--<div class="alert alert-note">
+  <div>
+    &ndash;&gt;</p>
+<!--Quickly discover relevant content by [filtering publications](https://jackie840129.github.io/publication/).-->
+<!--
+  </div>
+</div>
+-->
+
+
+    
+      
+        
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/aaai_2022/" >FedFR: Joint Optimization Federated Framework for Generic and Personalized Face Recognition</a>
+    </h3>
+
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span ><strong>chih-ting liu</strong></span>, <span >chien-yi wang</span>, <span >shao-yi chien</span>, <span >shang-hong lai</span>
+  </div>
+  
+  
+
+  
+
+  
+  <span class="pub-publication">
+    
+      AAAI Conference on Artificail Intelligence (AAAI)
+    
+    
+      , <strong>Oral Paper</strong>
+    
+  </span>
+  <span class="article-date">
+    
+      
+    , 2022
+  </span>
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2112.12496.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/aaai_2022/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/jackie840129/FedFR" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/aaai_2022/presentation.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/aaai_2022/" >
+      <img src="/publication/aaai_2022/featured_huf431c671d600e967e4859cb95ac60f2a_146930_150x0_resize_lanczos_2.png" alt="FedFR: Joint Optimization Federated Framework for Generic and Personalized Face Recognition">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/icip21_hsr/" >Hard Samples Rectification for Unsupervised Cross-domain Person Re-identification</a>
+    </h3>
+
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span ><strong>chih-ting liu</strong></span>, <span >man-yu lee</span>, <span >tsai-shien chen</span>, <span >shao-yi chien</span>
+  </div>
+  
+  
+
+  
+
+  
+  <span class="pub-publication">
+    
+      Internatinal Conference on Image Processing  (ICIP)
+    
+    
+  </span>
+  <span class="article-date">
+    
+      
+    , 2021
+  </span>
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2106.07204.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/icip21_hsr/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://media.ee.ntu.edu.tw/research/HSR/ICIP_poster.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://media.ee.ntu.edu.tw/research/HSR/ICIP_presentation.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/yI122LDy1Qs" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/icip21_hsr/" >
+      <img src="/publication/icip21_hsr/featured_huc5226062dcca87ce753c4346745ded3c_114910_150x0_resize_lanczos_2.png" alt="Hard Samples Rectification for Unsupervised Cross-domain Person Re-identification">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/cvprw21_cfaan/" >Video-based Person Re-identification without Bells and Whistles</a>
+    </h3>
+
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span ><strong>chih-ting liu</strong></span>, <span >jun-cheng chen</span>, <span >chu-song chen</span>, <span >shao-yi chien</span>
+  </div>
+  
+  
+
+  
+
+  
+  <span class="pub-publication">
+    
+      Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRw)
+    
+    
+  </span>
+  <span class="article-date">
+    
+      
+    , 2021
+  </span>
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://media.ee.ntu.edu.tw/research/CFAAN/paper/CVPRw21_VideoReID.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/cvprw21_cfaan/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/jackie840129/CF-AAN" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://media.ee.ntu.edu.tw/research/CFAAN/10_ChihTingLiu_AMFG_2021.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/RNssJNmq504" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/cvprw21_cfaan/" >
+      <img src="/publication/cvprw21_cfaan/featured_hub6fce7dc5d8d8157acadf7244a8a7f28_296986_150x0_resize_lanczos_2.png" alt="Video-based Person Re-identification without Bells and Whistles">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/icip20_stgal/" >Space-Time Guided Association Learning For Unsupervised Person Re-Identification</a>
+    </h3>
+
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span >chih-wei wu</span>, <span ><strong>chih-ting liu</strong></span>, <span ><a href="https://sites.google.com/site/wctu1009/">wei-chih tu</a></span>, <span >yu tsao</span>, <span ><a href="https://www.ee.ntu.edu.tw/profile1.php?teacher_id=24037">yu-chiang frank wang</a></span>, <span >shao-yi chien</span>
+  </div>
+  
+  
+
+  
+
+  
+  <span class="pub-publication">
+    
+      IEEE International Conference on Image Processing (ICIP)
+    
+    
+  </span>
+  <span class="article-date">
+    
+      
+    , 2020
+  </span>
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://media.ee.ntu.edu.tw/research/STGAL/paper/wu2020_stgal.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/icip20_stgal/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/cw1204772/STGAL" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://media.ee.ntu.edu.tw/research/STGAL/" target="_blank" rel="noopener">
+  Project
+</a>
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/QZsPXGlIm0M" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/icip20_stgal/" >
+      <img src="/publication/icip20_stgal/featured_hu3852a10571d6ec15d83b59000aedd977_367015_150x0_resize_lanczos_2.png" alt="Space-Time Guided Association Learning For Unsupervised Person Re-Identification">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/eccv20_span/" >Orientation-aware Vehicle Re-identification with Semantics-guided Part Attention Network</a>
+    </h3>
+
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span ><a href="https://tsaishien-chen.github.io/">tsai-shien chen</a></span>, <span ><strong>chih-ting liu</strong></span>, <span >chih-wei wu</span>, <span >shao-yi chien</span>
+  </div>
+  
+  
+
+  
+
+  
+  <span class="pub-publication">
+    
+      European Conference on Computer Vision (ECCV)
+    
+    
+      , <strong>Oral Paper</strong>
+    
+  </span>
+  <span class="article-date">
+    
+      
+    , 2020
+  </span>
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://media.ee.ntu.edu.tw/research/SPAN/papers/ECCV20_VehicleReID.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/eccv20_span/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/tsaishien-chen/SPAN" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://media.ee.ntu.edu.tw/research/SPAN/" target="_blank" rel="noopener">
+  Project
+</a>
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://tsaishien-chen.github.io/publications/SPAN_slides.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=gHBnue6U1Ec&amp;feature=youtu.be" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/eccv20_span/" >
+      <img src="/publication/eccv20_span/featured_hu2970e1ecc477c44531ec0c507f786687_267480_150x0_resize_lanczos_2.png" alt="Orientation-aware Vehicle Re-identification with Semantics-guided Part Attention Network">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+
+    
+    
+    
+
+      
+      
+        
+      
+
+      
+
+      <div class="see-all">
+        <a href="/publication/">
+          See all publications
+          <i class="fas fa-angle-right"></i>
+        </a>
+      </div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  <section id="contact" class="home-section wg-contact   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+<div class="row contact-widget ">
+  
+    
+      <div class="col-12 col-lg-4 section-heading">
+        <h1>Contact</h1>
+        
+      </div>
+    
+  
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+    <ul class="fa-ul">
+
+      
+      <li>
+        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+        <span id="person-email"><a href="mailto:jackieliu@media.ee.ntu.edu.tw">jackieliu@media.ee.ntu.edu.tw</a></span>
+      </li>
+      
+
+      
+
+      
+      
+        
+        <li>
+          <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+          <span id="person-address">Room 421, Barry Lam Hall, National Taiwan University, Taipei, Taiwan </span>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+      
+
+    </ul>
+
+    
+    <div class="d-none">
+      <input id="map-provider" value="2">
+      <input id="map-lat" value="25.019463">
+      <input id="map-lng" value="121.542614">
+      <input id="map-dir" value="Room 421, Barry Lam Hall, National Taiwan University, Taipei, Taiwan ">
+      <input id="map-zoom" value="15">
+      <input id="map-api-key" value="">
+    </div>
+    <div id="map"></div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.3b2b658c61ebd725bd5fc606c89fe44c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2019 Chih-Ting Liu
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic Website Builder</a>
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
